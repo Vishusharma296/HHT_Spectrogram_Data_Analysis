@@ -18,7 +18,7 @@ Data sets of natural signals were obtained from In-Situ-Wind project of SHM depa
 The datasets were meant to be used for student research project only.
 They were obtained by the permission of Prof. Dr-Ing Peter Kreamer.
 
-This repository contains:
+### Contents of repository
 
 CSVs extracted from two large Data Structure in Matlab files/tables 
 - Latex source file of the report
