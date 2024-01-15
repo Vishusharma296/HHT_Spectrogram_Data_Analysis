@@ -1,1 +1,7 @@
+Contains the signal processing of artficially generated signals and the audiofile from sputnik.
 
+To run these Jupyter Notebook following dependencies, external software packages are required:
+- Numpy, Scipy, Matplotlib, Seaborn, 
+- EMD (Empirical Mode Decomposition)
+- installation of ffmpeg ("https://github.com/kkroening/ffmpeg-python")  (only for MP3 file)
+- Audio segment from pydub
