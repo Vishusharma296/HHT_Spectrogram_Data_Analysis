@@ -20,15 +20,14 @@ They were obtained by the permission of Prof. Dr-Ing Peter Kreamer.
 
 ### Contents of repository
 
-CSVs extracted from two large Data Structure in Matlab files/tables 
+
 - Latex source file of the report
 - Research Papers and Books
 - Matlab codes used in analysis
 - Jupyter notebooks written for data analysis in python
 - Images of the data analysis results
 - Notes - Presentations and scanned
-- CSV files from Wind Turbine data
-These CSVs comprises of following sensor data:
+- CSV files from Wind Turbine data. These CSVs were extracted from two large Data Structures in Matlab files/tables. These CSVs contains the following sensor data:
 
 - D1--- Data set 1, obtained on 24-01-2022
 - D2--- Data set 2, obtained on 29-01-2022
