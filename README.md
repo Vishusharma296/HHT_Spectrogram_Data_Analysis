@@ -18,6 +18,9 @@ Data sets of natural signals were obtained from In-Situ-Wind project of SHM depa
 The datasets were meant to be used for student research project only.
 They were obtained by the permission of Prof. Dr-Ing Peter Kreamer.
 
+![5 11_Wind_Turbine_Data_Structure](https://github.com/Vishusharma296/Studienarbeit_HHT_Spectrogram_WT/assets/73486657/355fcb03-be26-4c2f-8912-dd32c50c98de)
+
+
 ### Contents of repository
 
 
