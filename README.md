@@ -35,11 +35,10 @@ They were obtained by the permission of Prof. Dr-Ing Peter Kreamer.
 - D1--- Data set 1, obtained on 24-01-2022
 - D2--- Data set 2, obtained on 29-01-2022
 
--> Acc---Acclerometer data
--> DMS---Strain gauge data
--> INC--- Inclination data
--> Temp--- Temperature data
--> EOC--- Environmental operating conditions data
+- Acc---Acclerometer data
+- DMS---Strain gauge data
+- INC--- Inclination data
+- Temp--- Temperature data
+- EOC--- Environmental operating conditions data
 
-Only specific parts of the datasturcture were converted and extracted into CSVs 
-They were later analysed by Hilbert Huang Transform and Spectrogram for a comparitive study
+Only specific parts of the datasturcture were converted and extracted into CSVs. They were later analysed by applying Hilbert Huang Transform and Spectrogram for a comparitive study.
