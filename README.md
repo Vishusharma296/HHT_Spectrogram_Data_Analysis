@@ -2,7 +2,17 @@
 
 Title: Spectral Analysis of Non-linear, Non-stationary Time Series Data Using Hilbert-Huang Transform and Spectrogram.
 
-Work Summary:
+## Abstract
+
+This research project aims to explore and compare the effectiveness of Fourier Spectral Analysis (FSA), including Fourier Transform and Spectrogram, alongside Hilbert Huang Transform (HHT) and Hilbert Spectral Analysis (HSA) in analyzing non-linear and non-stationary time series signals. This research investigates the intricacies of FSA, HHT and HSA with an in depth discussion on their mathematical background, working and limitations with examples.
+
+The research applies these methods/frameworks to analyse to both artificial and natural signals and extracts valuable insights by comparing the performance of the two frameworks. This research also delves into the limitations of traditional Fourier Spectral Analysis when dealing with non-stationary and non-linear signals and demonstrates the effectiveness of HHT in providing better time-frequency resolution. 
+
+The research includes practical applications to real-world sensor data from off-shore wind turbines such as accelerometers, showcasing the potential application of these methods in various scientific and engineering disciplines. This research also scrutinizes the limitations of HHT and examines recent advancements in the field aimed at addressing these challenges. 
+
+Key Words: Time Series, Fourier Spectral Analysis, Hilbert Huang Transform, Spectrogram, Empirical Mode Decomposition, Intrinsic Mode Functions.  
+
+## Work Summary:
 
 - To deeply understand the working, limitations and strengths of the Fourier Spectral analysis (FFT + Spectrogram) and able to write codes for FSA in Matlab and Python.
 - To understand the working of the Hilbert Huang Transform and able to write codes for Hilbert Spectral Analysis (HSA) in Matlab and Python
@@ -25,11 +35,11 @@ The datasets were meant to be used for student research project only. They were 
 
 ### Main contents of the repository
 
-- Latex source file of the report
-- Research Papers and Books
 - Matlab codes for data analysis (live script mlx files)
 - Jupyter notebooks for data analysis (python)
 - Images of the data analysis results
+- Latex source file of the report
+- Research Papers and Books
 - Notes - Presentations and scanned
 - CSV files from Offshore-Wind Turbine data. These CSVs were extracted from two large Data Structures in Matlab files/tables. These CSVs contains the following sensor data:
 
