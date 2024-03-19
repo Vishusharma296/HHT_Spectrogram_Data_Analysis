@@ -4,9 +4,9 @@ Title: Spectral Analysis of Non-linear, Non-stationary Time Series Data Using Hi
 
 ## Abstract
 
-This research project aims to explore and compare the effectiveness of Fourier Spectral Analysis (FSA), including Fourier Transform and Spectrogram, alongside Hilbert Huang Transform (HHT) and Hilbert Spectral Analysis (HSA) in analyzing non-linear and non-stationary time series signals. This research investigates the intricacies of FSA, HHT and HSA with an in depth discussion on their mathematical background, working and limitations with examples.
+This research project aims to explore and compare the effectiveness of Fourier Spectral Analysis (FSA), including Fourier Transform and Spectrogram, alongside Hilbert Huang Transform (HHT) and Hilbert Spectral Analysis (HSA) in analyzing non-linear and non-stationary time series signals. This research investigates the intricacies of FSA, HHT, and HSA with an in-depth discussion of their mathematical background, working, and limitations with examples.
 
-The research applies these methods/frameworks to analyse to both artificial and natural signals and extracts valuable insights by comparing the performance of the two frameworks. This research also delves into the limitations of traditional Fourier Spectral Analysis when dealing with non-stationary and non-linear signals and demonstrates the effectiveness of HHT in providing better time-frequency resolution. 
+The research applies these methods/frameworks to analyze both synthetic and natural signals and extracts valuable insights by comparing the performance of the two frameworks. This research also delves into the limitations of traditional Fourier Spectral Analysis when dealing with non-stationary and non-linear signals and demonstrates the effectiveness of HHT in providing better time-frequency resolution. 
 
 The research includes practical applications to real-world sensor data from off-shore wind turbines such as accelerometers, showcasing the potential application of these methods in various scientific and engineering disciplines. This research also scrutinizes the limitations of HHT and examines recent advancements in the field aimed at addressing these challenges. 
 
