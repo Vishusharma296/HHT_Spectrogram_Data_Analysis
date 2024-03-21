@@ -16,7 +16,7 @@ Key Words: Time Series, Fourier Spectral Analysis, Hilbert Huang Transform, Spec
 
 - To deeply understand the working, limitations and strengths of the Fourier Spectral analysis (FFT + Spectrogram) and able to write codes for FSA in Matlab and Python.
 - To understand the working of the Hilbert Huang Transform and able to write codes for Hilbert Spectral Analysis (HSA) in Matlab and Python
-- To apply these methods to artificial as well as natural time series signals to valuable generate insights
+- To apply these methods to artificial as well as natural time series signals to generate valuable insights.
 - Performance comparisons of both the algorithms / Frameworks. 
 - Finding out about the limitations of HHT and recent research in HHT to overcome these shortcomings.
 - Apply these methods to sensor data from offshore Wind Turbines (mainly accelerometer, temperature, pressure sensors) and generate insights.
@@ -53,3 +53,50 @@ The datasets were meant to be used for student research project only. They were 
 - EOC--- Environmental operating conditions data
 
 Only relevant parts of the datasturcture were converted and extracted into CSVs. These files were later analysed by applying Hilbert Huang Transform and Spectrogram for a comparitive study.
+
+
+## Scope of future Work :
+
+### Algorithm and analysis
+
+- Indepth study of the variants of EMD/HHT
+- Indepth study of time and memory complexity of HHT and its variants
+- Implementation of advance variants of HHT/EMD/HSA algorithms in a) Python b) C++
+- First sandox in Jupyter Notebooks --> Python Modules
+- Developing Python libraries for implementation of HHT and its variants  -- EEMD, MEMD, HHSA
+
+### Hardware and building a measurement system
+
+#### Phase I
+
+- Goal: Implementation of a standalone measurement system running FSA and HHT + HSA on raspberry Pi for real time Sensor data (updating Images every 1-5 minutes)
+- For first phase temperature-pressure sensor will be used (Slow dynamics and low computational load)
+- Moving the data logging systems from CSV to SQL/Time Series DB (Postgre SQL / Influx DB)
+- GUI implementation on raspberry pi for the measurement system
+
+#### Phase II
+
+- Implementation of the measurement system (With reduced functionalities) on $10 Microcontroller like ESP32 / RP Pico W in MicroPython and Arduino framework
+- Running the board on battery source and visualization of results via Mobile device using a Wifi Connection
+
+#### Phase III
+
+- Building a custom PCB for sensor data acquisition, logging, computing algorithms, data visualization on Mobile device with WiFi
+- Cyber Security -- Password protection, Hardware encryption
+- Upload of data to the cloud account
+
+#### Hardware specifications:
+
+  Prtotype I
+
+  - PCB with ESP32/RP2040 | (Wroom/Wrover module), ESP32S series
+  - Inbuilt accelerometer/IMU unit | (SPI/I2C)
+  - Inbuilt temperature, humidity, pressure sensor | (BME280 series)
+  - Inbuilt LDR
+  - Flash storage + removable memory card | (SPI)
+  - Option for programming via SWD and USB | (USB to UART bridge) | CP2102
+  - Power supply via USB and 3.3V cheap Li-ion battery
+
+
+
+  
