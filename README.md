@@ -57,20 +57,13 @@ Only relevant parts of the datasturcture were converted and extracted into CSVs.
 
 ## Scope of future Work :
 
-### Algorithm and analysis
-
-- In depth study of the variants of EMD/HHT
-- In depth study of time and memory complexity of HHT and its variants
-- Implementation of advance variants of HHT/EMD/HSA algorithms in a) Python b) C++
-- First sandbox to be in Jupyter Notebooks --> Python Modules
-- Developing Python libraries for implementation of HHT and its variants  -- EEMD, MEMD, HHSA
-
-### Hardware and building a measurement system
+To build an inexpensive, modular, wireless sensor data acquisition, measurement and analysis system. 
 
 #### Measurement System Phase I
 
-- Goal: Implementation of a standalone wireless sensor data measurement system. Measurement system will do FSA and HHT + HSA  and other time series analysis on raspberry Pi for processing real time Sensor data (Updating graphs every 1-5 minutes). 
+**Goal: Design and implementation of wireless sensor data measurement systems. Measurement system should be able to perform FSA and (HHT + HSA) and other time series data analysis functions. Measurement system will use single board computers like raspberry Pi4/5 and custom made inexpensive sensor nodes based on boards like ESP32/rpi picoW for processing real time sensor data. Data visulaization would be done by GUI based interactive dashboards.**
 
+  
 - For first phase of the measurement system, a temperature-pressure sensor(Bosch BMP280) with a raspberry pi PicoW board will be used for wirelessly transmitting data to a server (using MQTT/HTTP).
 - Initial data logging system will be based on CSV files, later logging systems will move from CSV to SQL/Time Series DB (Postgre SQL / Influx DB)
 - Backend logic for FSA, HSA and other Time-series data analysis functions will be implemented in Python.
@@ -80,7 +73,7 @@ Only relevant parts of the datasturcture were converted and extracted into CSVs.
 #### Measurement System Phase II
 
 - Implementation of the measurement system backend logic (With reduced functionalities) on $10 Microcontroller like ESP32 / RP PicoW in MicroPython/Arduino framework. (Edge Computing)
-- Running the board on battery source and visualization of results via Mobile device using a Wifi Connection
+- Running the Sensor node on battery source and visualization of results via Mobile device using a Wifi Connection
 
 #### Measurement System Phase III
 
@@ -89,7 +82,7 @@ Only relevant parts of the datasturcture were converted and extracted into CSVs.
 - Upload of data to the cloud account/remote server.
 
 
-#### Hardware specifications for custom:
+#### Hardware specifications for custom PCBs:
 
   Prtotype I
 
@@ -102,9 +95,20 @@ Only relevant parts of the datasturcture were converted and extracted into CSVs.
   - Option for programming via SWD and USB | (USB to UART bridge) | CP2102
   - Power supply via USB and 3.3V cheap Li-ion battery.
   - Charging circuit for Li-ion battery
-  - Programming via USB
+  - Programming via USB/SWD
 
 #### Functional Software specifications
+
+### Algorithm and Analysis
+
+- In depth study of the variants of EMD/HHT
+- In depth study of time and memory complexity of HHT and its variants
+- Implementation of advance variants of HHT/EMD/HSA algorithms in a) Python b) C++
+- First sandbox to be in Jupyter Notebooks --> Python Modules
+- Developing Python libraries for implementation of HHT and its variants  -- EEMD, MEMD, HHSA
+
+
+Please refer to the following repository for updates and progress of the planned future work [Measurement System](https://github.com/Vishusharma296/Measurement_Systems/tree/main])
 
 
   
