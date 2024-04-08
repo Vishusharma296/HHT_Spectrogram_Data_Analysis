@@ -6,7 +6,7 @@ Title: Spectral Analysis of Non-linear, Non-stationary Time Series Data Using Hi
 
 This research project aims to explore and compare the effectiveness of Fourier Spectral Analysis (FSA), including Fourier Transform and Spectrogram, alongside Hilbert Huang Transform (HHT) and Hilbert Spectral Analysis (HSA) in analyzing non-linear and non-stationary time series signals. This research investigates the intricacies of FSA, HHT, and HSA with an in-depth discussion of their mathematical background, working, and limitations with examples.
 
-The research applies these methods/frameworks to analyze both synthetic and natural signals and extracts valuable insights by comparing the performance of the two frameworks. This research also delves into the limitations of traditional Fourier Spectral Analysis when dealing with non-stationary and non-linear signals and demonstrates the effectiveness of HHT in providing better time-frequency resolution. 
+The research applies these methods/frameworks to analyze both synthetic and natural signals and extracts valuable insights by comparing the performance of the two frameworks. This research also explores the limitations of traditional Fourier Spectral Analysis when dealing with non-stationary and non-linear signals and demonstrates the effectiveness of HHT in providing better time-frequency resolution. 
 
 The research includes practical applications to real-world sensor data from off-shore wind turbines such as accelerometers, showcasing the potential application of these methods in various scientific and engineering disciplines. This research also scrutinizes the limitations of HHT and examines recent advancements in the field aimed at addressing these challenges. 
 
@@ -59,47 +59,60 @@ Only relevant parts of the datasturcture were converted and extracted into CSVs.
 
 To build an inexpensive, modular, wireless sensor data acquisition, measurement and analysis system. 
 
-#### Measurement System Phase I
+## Measurement System Phase I
 
-**Goal: Design and implementation of wireless sensor data measurement systems. Measurement system should be able to perform FSA and (HHT + HSA) and other time series data analysis functions. Measurement system will use single board computers like raspberry Pi4/5 and custom made inexpensive sensor nodes based on boards like ESP32/rpi picoW for processing real time sensor data. Data visulaization would be done by GUI based interactive dashboards.**
 
-  
-- For first phase of the measurement system, a temperature-pressure sensor(Bosch BMP280) with a raspberry pi PicoW board will be used for wirelessly transmitting data to a server (using MQTT/HTTP).
+### Project Description
+
+- Goal: Implementation of a standalone wireless sensor data measurement system. Measurement system will do FSA and HHT + HSA  and other time series analysis on raspberry Pi for processing real time sensor data (Updating graphs every 1-5 minutes). 
+
+- For first phase of the measurement system, a temperature-pressure sensor (Bosch BMP280) with a rpi PicoW board will be used for wirelessly transmitting data to a server (using MQTT/HTTP).
 - Initial data logging system will be based on CSV files, later logging systems will move from CSV to SQL/Time Series DB (Postgre SQL / Influx DB)
-- Backend logic for FSA, HSA and other Time-series data analysis functions will be implemented in Python.
-- GUI implementation will be done on raspberry pi for interaction with the measurement system (HTML5 based).
-- Experiments with system architechture - MQTT, HTTP (Restful APIs)
+- Backend logic for FSA, HSA and other Time-series data analysis functions will be implemented in Python/JavaScript.
+- Initial data manipulation and visualization will be done using Python and Jupyter Notebooks
+- GUI implementation will be done on rpi for interaction with the measurement system (HTML5 or React based) in the later prototypes 2,3 ....
+- Experiments with system architechture will be done by trying and changing communication protocols- (MQTT, HTTP Restful APIs), sensor data logging system (CSV, PostgreSQL, InfluxDB), Data Visualization System (Jupyter notebooks, PowerBI, HTML/React based GUI)
+
+### Measurement System | Phase 1 | Prototype - 1 | System Architechture
+
+![Measurement System](https://github.com/Vishusharma296/HHT_Spectrogram_Data_Analysis/assets/73486657/79ec2b40-928b-437c-ad6f-baa24076854d)
+
 
 #### Measurement System Phase II
 
-- Implementation of the measurement system backend logic (With reduced functionalities) on $10 Microcontroller like ESP32 / RP PicoW in MicroPython/Arduino framework. (Edge Computing)
-- Running the Sensor node on battery source and visualization of results via Mobile device using a Wifi Connection
+- Implementation of the measurement system backend logic (With reduced functionalities) on inexpensive $10-20 computer like ESP32 / RP PicoW / RPzeroW2 in MicroPython/Arduino framework. (Edge Computing)
+- Running the board on battery source and visualization of results via Mobile device using a Wifi Connection
+- Implementation of the data visualization system using React (Native)
+- Implementation of the whole system Measurement system using containerization with Docker.
+- Assigning Static IP address to the MQTT/HTTP Server
 
 #### Measurement System Phase III
 
 - Building a custom PCB for sensor data acquisition, logging, computing algorithms, and visualization of sensor data using Mobile device with WiFi connection.
-- Cyber Security -- Password protection, Hardware encryption
-- Upload of data to the cloud account/remote server.
+- Cyber Security -- Password protection, Hardware encryption, Sensor data encryption using ECC(Elliptic Curve Cryptography) / other suitable crytographic algorithms for IoT devices.
+- Upload of telemetry data to the cloud account/remote server.
 
 
-#### Hardware specifications for custom PCBs:
+#### Hardware specifications for custom PCB:
 
-  Prtotype I
+  Prtotype Hardware device I
 
-  - PCB with ESP32/RP2040 | (Wroom/Wrover module), ESP32S series, PicoW board
+  - PCB with ESP32/RP2040 | (Wroom/Wrover module), ESP32 S/C/P series, PicoW board
   - UART-USB bridge | (CP2102)
   - Inbuilt accelerometer/IMU unit | (SPI/I2C)
-  - Inbuilt temperature, humidity, pressure sensor | (Bosch BME280, BMP280 series)
+  - Inbuilt temperature, humidity, pressure sensor | (Bosch BME280, BMP280 series) | (I2C)
   - Inbuilt LDR
-  - Inbuilt Flash storage + removable memory card | (SPI)
-  - Option for programming via SWD and USB | (USB to UART bridge) | CP2102
+  - Inbuilt Flash/EPROM storage + removable memory card support | (SPI)
+  - Option for programming the chip (RP2040) via SWD and USB| (USB to UART bridge) | CP2102
+  - Native USB support, USB OTG, WiFi and BLE capabilities | ESP32 S series chips
   - Power supply via USB and 3.3V cheap Li-ion battery.
   - Charging circuit for Li-ion battery
-  - Programming via USB/SWD
+  - Programming via USB interface using MicroPython/Arduino framework/ Embedded C
+  - Future boards to have LoRaWAN communication capabilities by adding the module/SOC | Semtech Sx1276 series chips
 
-#### Functional Software specifications
+#### Functional Software specifications and requirements
 
-### Algorithm and Analysis
+### Algorithm and analysis
 
 - In depth study of the variants of EMD/HHT
 - In depth study of time and memory complexity of HHT and its variants
